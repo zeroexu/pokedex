@@ -1,4 +1,4 @@
-import { IAPPSettings } from '@/types/appSettings';
+import { IAPPSettings } from '@/types/IAppSettings';
 
 export const APP_SETTINGS: IAPPSettings = {
   APIS: {

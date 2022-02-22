@@ -1,6 +1,6 @@
 import { FC } from 'react';
 
-export interface listDrawer {
+export interface IlistDrawer {
   elements: any[];
   Component: FC;
   name: string;

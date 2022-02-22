@@ -1,8 +1,8 @@
 import { FC } from 'react';
 import Tag from '@/components/Tag';
-import { pokemon } from '@/types/index';
+import { IPokemon } from '@/types/IPokemon';
 
-const Card: FC<pokemon> = ({ name, types, image, id }) => (
+const Card: FC<IPokemon> = ({ name, types, image, id }) => (
   <div>
     {types.map((pokemonType, index) => (
       <Tag key={`card-tag-${id}-${index}`} {...pokemonType} />
