@@ -326,6 +326,19 @@
   "resolved" "https://registry.npmjs.org/callsites/-/callsites-3.1.0.tgz"
   "version" "3.1.0"
 
+"camelcase-keys-deep@^0.1.0":
+  "integrity" "sha1-Lg3WFznJnwaO/Y3mBqYp7YCLu6M="
+  "resolved" "https://registry.npmjs.org/camelcase-keys-deep/-/camelcase-keys-deep-0.1.0.tgz"
+  "version" "0.1.0"
+  dependencies:
+    "camelcase" "^2.1.1"
+    "map-obj" "^1.0.1"
+
+"camelcase@^2.1.1":
+  "integrity" "sha1-fB0W1nmhu+WcoCys7PsBHiAfWh8="
+  "resolved" "https://registry.npmjs.org/camelcase/-/camelcase-2.1.1.tgz"
+  "version" "2.1.1"
+
 "caniuse-lite@^1.0.30001283":
   "integrity" "sha512-Wiz1Psk2MEK0pX3rUzWaunLTZzqS2JYZFzNKqAiJGiuxIjRPLgV6+VDPOg6lQOUxmDwhTlh198JsTTi8Hzw6aQ=="
   "resolved" "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001312.tgz"
@@ -1248,6 +1261,11 @@
   "version" "6.0.0"
   dependencies:
     "yallist" "^4.0.0"
+
+"map-obj@^1.0.1":
+  "integrity" "sha1-2TPOuSBdgr3PSIb2dCvcK03qFG0="
+  "resolved" "https://registry.npmjs.org/map-obj/-/map-obj-1.0.1.tgz"
+  "version" "1.0.1"
 
 "merge-stream@^2.0.0":
   "integrity" "sha512-abv/qOcuPfk3URPfDzmZU1LKmuw8kT+0nIHvKrKgFrwifol/doWcdA4ZqsWQ8ENrFKkd67Mfpo/LovbIUsbt3w=="
