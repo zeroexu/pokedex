@@ -7,7 +7,6 @@ const withFetchService = (Component: ElementType) => {
     useEffect(() => {
       (async () => {
         const { data } = await request.get(url);
-        console.log(data, url);
         data && setLocalProps(data);
       })();
     }, []);
