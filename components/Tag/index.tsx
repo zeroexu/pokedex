@@ -1,7 +1,7 @@
-import { universalLink } from '@/types/index';
+import { IUniversalLink } from '@/types/IUniversalLink';
 import { FC } from 'react';
 
-const Tag: FC<universalLink> = ({ type: { name } }) => {
+const Tag: FC<IUniversalLink> = ({ name }) => {
   return <span>{name} </span>;
 };
 
