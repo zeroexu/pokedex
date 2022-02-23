@@ -72,6 +72,12 @@ export interface IPokeType {
   type: IUniversalLink;
 }
 
+export interface IPokeTypes {
+  nameGroup: string;
+  id: number;
+  types: IPokeType[];
+}
+
 export interface ISprites {
   backDefault: string;
   backFemale: string;
