@@ -1,15 +1,14 @@
 import { FC } from 'react';
-import Tag from '@/components/Tag';
+import GroupTag from '@/components/Tag/GroupTag';
 import { IPokemon } from '@/types/IPokemon';
+import PokeLink from '@/components/PokeLink';
 
 const Card: FC<IPokemon> = ({ name, types, sprites, id }) => (
   <div>
-    {types.map((pokemonType, index) => (
-      <Tag key={`card-tag-${id}-${index}`} {...pokemonType} />
-    ))}
+    <GroupTag nameGroup={'card-pokemon-'} id={id} types={types} />
     <img src={sprites.frontDefault} />
     <h2>
-      #{id} - {name}
+      <PokeLink name={`#${id} - ${name}`} url={`/pokemon/${id}`} />
     </h2>
   </div>
 );

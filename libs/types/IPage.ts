@@ -1,4 +1,4 @@
-import { IPokemonList } from './IPokemon';
+import { IPokemon, IPokemonList } from './IPokemon';
 
 export interface IPage {
   statusCode: number;
@@ -9,5 +9,5 @@ export interface IPageCatalog extends IPage {
 }
 
 export interface IPageDescription extends IPage {
-  data: any;
+  data: IPokemon;
 }
