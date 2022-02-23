@@ -6,7 +6,7 @@ const get = (url: string, data: any = {}) => {
   return axiosInstance
     .get(url, data)
     .then((response) => {
-      response.data = camelcaseKeysDeep(data);
+      response.data = camelcaseKeysDeep(response.data);
       return response;
     })
     .catch((e) => {
