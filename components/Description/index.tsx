@@ -1,17 +1,15 @@
 import { FC } from 'react';
-import Tag from '@/components/Tag';
-import { pokemon } from '@/types/index';
+import GroupTag from '@/components/Tag/GroupTag';
+import { IPokemon } from '@/types/IPokemon';
 
-const Description: FC<pokemon> = ({ name, types, image, id }) => (
+const Description: FC<IPokemon> = ({ name, types, sprites, id }) => (
   <div>
-    <img src={image} />
+    <img src={sprites.frontDefault} />
     <div>
       <h2>
         #{id} - {name}
       </h2>
-      {types.map((pokemonType, index) => (
-        <Tag key={`description-tag-${id}-${index}`} {...pokemonType} />
-      ))}
+      <GroupTag nameGroup={'card-pokemon-description-'} id={id} types={types} />
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
         eleifend eu dui vitae commodo. Aliquam eu purus viverra, bibendum nibh
