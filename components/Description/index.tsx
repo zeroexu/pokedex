@@ -1,10 +1,11 @@
 import { FC } from 'react';
 import GroupTag from '@/components/Tag/GroupTag';
 import { IPokemon } from '@/types/IPokemon';
+import PokeSprite from '../PokeSprite';
 
 const Description: FC<IPokemon> = ({ name, types, sprites, id }) => (
   <div>
-    <img src={sprites.frontDefault} />
+    <PokeSprite url={sprites.frontDefault} name={name} />
     <div>
       <h2>
         #{id} - {name}
