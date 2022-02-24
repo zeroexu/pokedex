@@ -11,4 +11,7 @@ export interface IAPP {
 export interface IAPPSettings {
   APIS: IAPIS;
   APP: IAPP;
+  LIST: {
+    limit: number;
+  };
 }

@@ -4,7 +4,7 @@ const camelcaseKeysDeep = require('camelcase-keys-deep');
 const axiosInstance = Axios.create();
 const get = (url: string, data: any = {}) => {
   return axiosInstance
-    .get(url, data)
+    .get(url, { params: data })
     .then((response) => {
       response.data = camelcaseKeysDeep(response.data);
       return response;
