@@ -1,9 +1,19 @@
 import { FC } from 'react';
 import Image from 'next/image';
-import { IUniversalLink } from '@/types/IUniversalLink';
+import { IImageLoader } from '@/types/IUniversalLink';
 
-const PokeSprite: FC<IUniversalLink> = ({ name, url }) => (
-  <Image src={url} width={96} height={96} alt={name} placeholder="empty" />
+const PokeSprite: FC<IImageLoader> = ({ name, url, width, height }) => (
+  <div style={{ position: 'relative', height: height, width: width }}>
+    <Image
+      src={url}
+      width={width}
+      height={height}
+      alt={name}
+      placeholder="empty"
+      layout="responsive"
+      objectFit="contain"
+    />
+  </div>
 );
 
 export default PokeSprite;

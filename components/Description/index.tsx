@@ -4,8 +4,15 @@ import { IPokemon } from '@/types/IPokemon';
 import PokeSprite from '../PokeSprite';
 
 const Description: FC<IPokemon> = ({ name, types, sprites, id }) => (
-  <div>
-    <PokeSprite url={sprites.frontDefault} name={name} />
+  <div className="description">
+    <div>
+      <PokeSprite
+        url={sprites.other.dreamWorld.frontDefault}
+        name={name}
+        width={'100%'}
+        height={'100vh'}
+      />
+    </div>
     <div>
       <h2>
         #{id} - {name}
