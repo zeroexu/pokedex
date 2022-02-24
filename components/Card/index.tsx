@@ -5,7 +5,7 @@ import PokeLink from '@/components/PokeLink';
 import PokeSprite from '../PokeSprite';
 
 const Card: FC<IPokemon> = ({ name, types, sprites, id }) => (
-  <div>
+  <div className="card">
     <GroupTag nameGroup={'card-pokemon-'} id={id} types={types} />
     <PokeSprite
       url={sprites.other.dreamWorld.frontDefault}
