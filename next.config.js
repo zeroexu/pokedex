@@ -7,6 +7,9 @@ const nextConfig = {
     APP_META: process.env.APP_META,
     POKEAPI: process.env.POKEAPI,
   },
+  images: {
+    domains: ['raw.githubusercontent.com'],
+  },
 };
 
 module.exports = nextConfig;
