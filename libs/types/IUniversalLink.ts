@@ -4,7 +4,6 @@ export interface IUniversalLink {
 }
 
 export interface IImageLoader extends IUniversalLink {
-  width: number;
-  height: number;
-  alt: string;
+  width: number | string;
+  height: number | string;
 }

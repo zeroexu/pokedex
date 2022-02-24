@@ -11,7 +11,7 @@ const withFetchService = (Component: ElementType) => {
       })();
     }, []);
     if (!localProps) {
-      return <></>;
+      return <div className="mock"></div>;
     }
     return <Component {...localProps} />;
   };
