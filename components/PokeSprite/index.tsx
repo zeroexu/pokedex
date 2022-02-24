@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { IImageLoader } from '@/types/IUniversalLink';
 
 const PokeSprite: FC<IImageLoader> = ({ name, url, width, height }) => (
-  <div style={{ position: 'relative', height: height, width: width }}>
+  <div className="next-image-container">
     <Image
       src={url}
       width={width}

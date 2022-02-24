@@ -1,6 +1,8 @@
 import { ILayoutCore } from '@/types/ILayoutCore';
 import { FC } from 'react';
-import LayoutCore from '../LayoutCore';
+import Header from '@/components/Layout/Header';
+import LayoutCore from '@/components/Layout/LayoutCore';
+import Footer from '../Footer';
 
 const LayoutDescription: FC<ILayoutCore> = ({
   children,
@@ -8,9 +10,9 @@ const LayoutDescription: FC<ILayoutCore> = ({
   metaPage,
 }) => (
   <LayoutCore titlePage={titlePage} metaPage={metaPage}>
-    <header>simple header</header>
+    <Header isBack={true} />
     <main className="description">{children}</main>
-    <footer>simple footer</footer>
+    <Footer />
   </LayoutCore>
 );
 export default LayoutDescription;
