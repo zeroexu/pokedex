@@ -6,6 +6,7 @@ export interface IPage {
 
 export interface IPageCatalog extends IPage {
   data: IPokemonList;
+  offset: number;
 }
 
 export interface IPageDescription extends IPage {
