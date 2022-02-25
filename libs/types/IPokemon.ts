@@ -22,6 +22,11 @@ export interface IPokemon {
   weight: number;
 }
 
+export interface PokeSize {
+  height: string;
+  weight: number;
+}
+
 export interface IPokemonList {
   count: number;
   next: string | null;
