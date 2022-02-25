@@ -34,6 +34,7 @@ main.grid {
   grid-auto-rows: 12rem;
   grid-template-columns: repeat(auto-fill, minmax(min(100%, 13rem), 1fr));
   place-items: center;
+  min-height: calc(100vh - 128px);
 }
 
 div.mock {
@@ -159,4 +160,14 @@ span.tag.fairy {
 }
 .poke-size > div > h4 {
   margin: 0 8px 0 0;
+}
+
+.list-navigation {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.list-navigation > a {
+  margin: 0 24px;
 }
