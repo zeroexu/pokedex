@@ -5,3 +5,9 @@ export interface IlistDrawer {
   Component: FC<any>;
   name: string;
 }
+
+export interface IListNavigation {
+  offset: number;
+  next?: string | null;
+  previous?: string | null;
+}
