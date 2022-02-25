@@ -9,7 +9,7 @@ const Back: FC = () => {
   };
   return (
     <nav>
-      <Link href={''}>
+      <Link href={'/'}>
         <a onClick={handleClick}>Volver</a>
       </Link>
     </nav>
