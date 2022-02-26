@@ -23,7 +23,7 @@ export interface IPokemon {
 }
 
 export interface PokeSize {
-  height: string;
+  height: number;
   weight: number;
 }
 
