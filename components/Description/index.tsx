@@ -25,6 +25,7 @@ const Description: FC<IPokemon> = ({
           placeholder="empty"
           layout="responsive"
           objectFit="contain"
+          priority
         />
       </div>
     </div>

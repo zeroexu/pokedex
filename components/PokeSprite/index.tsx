@@ -12,6 +12,7 @@ const PokeSprite: FC<IImageLoader> = ({ name, url, width, height }) => (
       placeholder="empty"
       layout="responsive"
       objectFit="contain"
+      priority
     />
   </div>
 );
