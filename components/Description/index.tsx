@@ -18,7 +18,7 @@ const Description: FC<IPokemon> = ({
     <div>
       <div className="next-image-container">
         <Image
-          src={sprites.other.dreamWorld.frontDefault}
+          src={sprites.frontDefault}
           width="100px"
           height="100px"
           alt={name}
