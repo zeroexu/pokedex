@@ -10,6 +10,7 @@ const nextConfig = {
   images: {
     domains: ['raw.githubusercontent.com'],
   },
+  extends: ['plugin:@next/next/recommended'],
 };
 
 module.exports = nextConfig;
