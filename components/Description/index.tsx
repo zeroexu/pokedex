@@ -30,9 +30,9 @@ const Description: FC<IPokemon> = ({
       </div>
     </div>
     <div className="card">
-      <h2>
+      <h1>
         #{id} - {name}
-      </h2>
+      </h1>
       <Species {...species} />
       <SizeInfo height={height} weight={weight} />
       <h3>Tipos:</h3>
