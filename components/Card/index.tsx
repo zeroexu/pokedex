@@ -14,7 +14,7 @@ const Card: FC<IPokemon> = ({ name, types, sprites, id }) => (
       height={96}
     />
     <h2>
-      <PokeLink name={`#${id} - ${name}`} url={`/pokemon/${id}`} />
+      <PokeLink name={`#${id} - ${name}`} url={`/pokemon/${name}`} />
     </h2>
   </div>
 );

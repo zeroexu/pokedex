@@ -14,7 +14,7 @@ const Index: FC<IPageDescription> = ({ data }) => (
   </LayoutDescription>
 );
 export async function getServerSideProps({ query }: any) {
-  const { data, status } = await getPokemon(query.pokemonId);
+  const { data, status } = await getPokemon(query.pokemonName);
   return {
     props: { data, statusCode: status },
   };
